@@ -60,7 +60,6 @@ export class ProductAddComponent {
   onSubmit(): void {
    
     if (this.productForm.valid) {
-      alert("s")
       const product: IProduct = this.productForm.value;
       if(this.productId){
       this.service.updateProduct(product).subscribe(data=>{
